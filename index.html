@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Sison - Portfolio</title>
+    <style>
+        :root {
+            --primary-dark: #2c3e50;
+            --accent-blue: #3498db;
+            --text-gray: #7f8c8d;
+            --bg-light: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.4; /* Tightened line height */
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 20px;
+        }
+        .resume-card {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            min-height: 1000px;
+        }
 
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--primary-dark);
+            color: #fff;
+            padding: 25px; /* Reduced padding */
+            text-align: center;
+        }
+        
+        .profile-pic {
+            width: 140px; /* Slightly smaller */
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-blue);
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        .sidebar h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 5px;
+            margin-top: 20px; /* Reduced top margin */
+            text-align: left;
+        }
+        .info-link { font-size: 0.85rem; margin: 5px 0; color: #bdc3c7; text-align: left; word-wrap: break-word; }
+        .skill-tag { 
+            display: inline-block; 
+            background: #34495e; 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            margin: 2px; 
+            font-size: 0.75rem;
+        }
+
+        /* Main Body */
+        .main { padding: 30px 40px; } /* Reduced top/bottom padding */
+        .header { border-bottom: 4px solid var(--primary-dark); margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 2.5rem; color: var(--primary-dark); }
+        .header p { margin: 2px 0 10px; color: var(--accent-blue); font-weight: bold; letter-spacing: 1px; }
+        
+        section { margin-bottom: 25px; } /* Reduced section spacing */
+        h2.section-title { 
+            color: var(--primary-dark); 
+            text-transform: uppercase; 
+            font-size: 1.1rem; 
+            border-left: 5px solid var(--accent-blue); 
+            padding-left: 12px; 
+            margin-bottom: 15px;
+        }
+        .entry { margin-bottom: 12px; } /* Reduced entry spacing */
+        .entry-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 0.95rem; }
+        .entry-sub { color: var(--text-gray); font-style: italic; font-size: 0.85rem; margin-top: 2px; }
+        
+        .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } /* Tighter grid gap */
+        .cert-item { 
+            background: #f9f9f9; 
+            padding: 10px 12px; /* Reduced item padding */
+            border-radius: 5px; 
+            border: 1px solid #eee;
+        }
+        .cert-name { font-weight: bold; color: var(--primary-dark); display: block; margin-bottom: 2px; text-transform: uppercase; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="resume-card">
+    <aside class="sidebar">
+        <img src="yeyeye.jpg" alt="Christian Sison" class="profile-pic">
+
+        <h2>Contact</h2>
+        <div class="info-link">📞 +63-945-295-7906</div>
+        <div class="info-link">✉️ christianjoenellsison@gmail.com</div>
+        <div class="info-link">📍 Paranaque City</div>
+
+        <h2>Technical Skills</h2>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C++</span>    
+        <span class="skill-tag">Database</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Microsoft</span>
+        <span class="skill-tag">Powerpoint</span>
+        <span class="skill-tag">Excel</span>
+
+        <h2>Languages</h2>
+        <div class="info-link">English</div>
+        <div class="info-link">Tagalog</div>
+        <div class="info-link">Japanese (Basic)</div>
+    </aside>
+
+    <main class="main">
+        <header class="header">
+            <h1>CHRISTIAN M. SISON</h1>
+            <p>3rd YEAR BSIT STUDENT</p>
+        </header>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Lyceum of the Philippines University - Manila</span>
+                    <span>2023 - CURRENT</span>
+                </div>
+                <div class="entry-sub">Bachelor of Science in Information Technology (BSIT)</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Manila Tytana Colleges</span>
+                    <span>2021 - 2023</span>
+                </div>
+                <div class="entry-sub">General Academic Strand (GAS) | GPA: 91 (With Honors)</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Paulo Scholastic Chastity de Montessori Academy, Inc.</span>
+                    <span>2016 - 2020</span>
+                </div>
+                <div class="entry-sub">Secondary Education | GPA: 93 (With Honors)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <span class="cert-name">Data Analytics</span>
+                    <div class="entry-sub">Tech Voyage | April 23, 2024</div>
+                </div>
+                
+                <div class="cert-item">
+                    <span class="cert-name">Cloud Gaming</span>
+                    <div class="entry-sub">Tech Voyage | April 22, 2024</div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-name">Artificial Intelligence</span>
+                    <div class="entry-sub">TechTutor Philippines | Oct 14, 2023</div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-name">Mastering Teamwork</span>
+                    <div class="entry-sub">PSITE | Sept 27, 2023</div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-name">NC III in Visual Graphic Design</span>
+                    <div class="entry-sub">Certification | TESDA | Dec 12, 2025</div>
+                </div>
+        
+                <div class="cert-item">
+                    <span class="cert-name">InnoVision 2026</span>
+                    <div class="entry-sub">Philippine Coding Camp | Feb 19, 2026</div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-name">AI Amplified Scholar</span>
+                    <div class="entry-sub">Certification | InnoVision | Feb 19, 2026</div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-name">Arm Robotics (Python)</span>
+                    <div class="entry-sub">TechnoKids | April 27, 2026</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
